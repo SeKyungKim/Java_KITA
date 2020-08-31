@@ -1,0 +1,23 @@
+# Java_KITA
+
+package chap01;
+
+public class day1 {
+	public static void main (String[] ags) {
+		
+		// int(타입) x(변수);
+		int kor = 70;
+		int eng = 70;
+		int com = 50;
+		// int x, y, z;로 간략화 가능
+		
+		System.out.println("이름 : 김세경\n");
+		// 문자열은 = "", 한 줄 띄우기 = \n
+		
+		System.out.println("성적표");
+		System.out.println("국어 점수 : "+kor);
+		System.out.println("영어 점수 : "+eng);
+		System.out.println("전산 점수 : "+com);
+		// 문자열 +변수 -> 문자열과 변수에 저장된 값 동시 출력
+	}
+}
