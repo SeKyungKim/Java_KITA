@@ -1,0 +1,205 @@
+public class DataType4 {
+	public static void main(String[] args) {
+		int su = 10;
+		
+		System.out.println("10진수 : " + su); //%d, %o, %x, %X
+		System.out.printf("10진수 %d \n", su);
+		System.out.printf("8진수 %o \n", su);
+		System.out.printf("16진수 %x %X \n", su, 10);
+		
+		System.out.printf("%d %x %o %X \n", 10, 10, 10, 10);
+		
+		//0숫자 --> 8진수, 0x숫자 --> 16진수
+		System.out.printf("%d \n", 012); //012 (8진수) --> 10진수 출력
+		System.out.printf("%d \n", 0xA); //0xA (16진수) --> 10진수 출력
+		
+		
+	/*	System.out.println("========");
+		double f = 12.34;
+		System.out.println(f);
+		float ff = 5.78F;
+		System.out.println(ff);
+	 */ 
+		// "/*,*/ : 여러 줄 주석"
+		
+		int x = 33;
+		long y = 999;
+		System.out.println(y);
+		System.out.println(100); //system이 인식하는 정수형은 int
+		System.out.println(100L); //long형 8 byte짜리 정수
+		
+
+	}
+
+}
+
+--------------------------------------
+package ex02.datayType;
+
+public class DataType3 {
+	public static void main(String[] args) {
+		short sh = 3; // -32,- ~ +32,-
+		int num = 32769; //-21억 ~ +21억 : 4byte
+		System.out.println(sh + "," + num);
+		//작은 자료형이 큰자료형에 자동형 변환된다
+		num = sh; // int(4byte) = short(2byte)
+		
+		System.out.println("sh=" + sh);
+		System.out.println("num = " + num);
+		
+		num = 32769; // short 범위에서 +2 초과된 만큼 음수에서 +2로 출력된다. (-32767로 출력)
+		sh = (short)num;
+		System.out.println("sh = " + sh);
+		System.out.println("num = " + num);
+	}
+
+}
+---------------------------------------
+package ex02.datayType;
+
+public class DataType2 {
+	
+
+	public static void main(String[] args) {
+	
+		for(int i ='a'; i <='z'; i++) {
+			System.out.print((char)i + "");
+		}
+		for(int i =65; i <= 90; i++) {
+			System.out.print((char)i + "\t");
+		}//for end
+		
+		System.out.println();
+		boolean flag = true; 
+		// int b = flag; 자바에서는 boolean type이 int 형으로 변환 안된다
+		System.out.println(flag);
+		
+	
+	}
+}
+
+
+-----------------------------------------
+package day_operator;
+
+public class Ex01_Quiz {
+	public static void main(String[] args) {
+		
+		//1. 변수 선언
+		
+		String name = "김세경";
+		int kor = 85, eng = 80, com = 75, tot;
+		double avg;
+		
+		//2. 메세지 출력 및 입력받기
+		
+		
+		//3. 처리(계산)
+		tot = kor + eng + com;
+		avg = tot / 3.0;
+	
+		
+		// avg = kor + eng + com /3.;
+		//avg = tot /3.0;		
+		
+		
+		System.out.println(name + "님 성적표");
+		System.out.println("====================");
+		System.out.println("국어 점수  : " + kor);
+		System.out.println("영어 점수  : " + eng);
+		System.out.println("전산 점수  : " + com);
+		
+	    // System.out.println("\teng : " + eng + "\tcom : " + com);
+	    // System.out.print("total = " + tot);
+		// System.out.printf("\t avg : %.2f", avg); -->소수점 둘때
+		
+		System.out.println("총 점수  : " + tot);
+		System.out.println("평균 점수  : " + avg);
+
+-------------------------------
+package day_operator;
+
+
+/*
+  문제) 
+  
+  월급 -> 
+ int pay = 567890; 
+ 
+ result -> 
+  만원 : 56장
+  천원 : 7장
+  백원 : 8개
+  십원 : 9개
+
+ */
+
+public class Ex02_Quiz {
+	public static void main(String[] args) {
+		//1. 변수 선언
+		int pay = 567890;
+//		int man, chun, back, sip; //몫 저장 변수
+//		int m_na, ch_na, b_na; // 나머지 저장 변수
+
+		//2. 메세지 출력 및 입력 받기
+		//3. 처리(계산)
+//		man = pay /10000; m_na = pay % 10000;
+//		chun = m-na /1000; c_na = m_na % 1000; 
+//		back = ch_na /100; b_na = ch_na % 100;
+//		sip = b_na /10;
+//		//4. 결과 출력
+//		System.out.println("\n만원 : " + man + "장\n천원" + chun +"장\n백원 :" +back + "개\n십원 : " + sip + "개");
+//		
+//		
+		
+		
+		System.out.println("만 원 : " + pay/10000 + "장");
+		System.out.println("천 원 : " + (pay%10000)/1000 + "장");
+		System.out.println("백 원 : " + ((pay%10000)%1000)/100 + "개");
+		System.out.println("십 원 : " + (((pay%10000)%1000)%100)/10 + "개");
+
+	}
+
+}
+---------------------------
+package day_operator;
+
+public class Ex03_Quiz {
+	public static void main(String[] args) {
+		int su = 123456;
+		
+		System.out.println("123456초는 " + 
+		(su/3600)+"시간"+((su%3600)/60 + "분")+((su%3600)%60) + "초");
+	}
+
+}
+
+
+-------------------------
+
+package ex02.Input;
+
+import java.util.Scanner;
+
+public class InputTest {
+	public static void main(String[] args) {
+	
+		//표준 입력 : system.in
+		Scanner sc = new Scanner(System.in);
+		System.out.println("su1 : ");
+		int su1 = sc.nextInt();
+		System.out.println("su2 : ");
+		int su2 = sc.nextInt();
+		
+		System.out.println(su1+ " + " + su2 + " = " + (su1 + su2));
+		System.out.println(su1+ " - " + su2 + " = " + (su1 - su2));
+		System.out.println(su1+ " / " + su2 + " = " + (su1 / su2));
+		System.out.println(su1+ " * " + su2 + " = " + (su1 * su2));
+
+		
+	
+	}
+}
+
+
+
