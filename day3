@@ -1,0 +1,48 @@
+package chap01;
+
+import java.util.Scanner;
+public class day3 {
+	public static void main(String[] args) {
+
+		
+		Scanner sc = new Scanner(System.in);
+
+		String res = "";
+		double avg;
+		
+		System.out.println("이름 : ");
+		String name = sc.nextLine();
+		System.out.println("국어 : ");
+		int su1 = sc.nextInt();
+		System.out.println("영어 : ");
+		int su2 = sc.nextInt();
+		System.out.println("전산 : ");
+		int su3 = sc.nextInt();
+		
+		
+		System.out.println(name + "의 성적표");
+		System.out.println("===========");
+		
+		int tot = su1 + su2 + su3;
+		avg = tot/3.0;
+		
+		if(avg>=60) {
+			if(su1<40 || su2<40 || su3<40) {System.out.println("불합격");
+		}	else {System.out.println("합격");
+		}	
+		}else {System.out.println("불합격");
+		
+		}
+		
+		System.out.println("===========");
+
+		System.out.println("국어 : " + su1);
+		System.out.println("영어 : " + su2);
+		System.out.println("전산 : " + su3);
+		System.out.println("평균 : " + avg);
+
+	
+
+	}
+
+}
