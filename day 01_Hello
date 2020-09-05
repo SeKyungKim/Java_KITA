@@ -1,0 +1,19 @@
+package day01.basic;
+
+public class practice {
+
+	public static void main(String[] args) { 
+  // 단축기 : main입력 + ctrl + space-bar
+				
+		System.out.println("Hello Java!!");  
+		System.out.print("\n Hello");
+		System.out.println();
+		System.out.println("Hello~! Java!!");
+		
+	} // main end
+	
+} // class end
+
+
+
+// Hello Java!!
