@@ -1,0 +1,29 @@
+package day01.basic;
+
+public class practice {   
+
+	public static void main(String[] args) { 
+				 
+    int x;    // 변수 x 선언
+    x = 1;    // 변수 x에 '1'을 저장
+    int y = 2;    // 변수 y를 선언 후 '2'를 저장
+    int result = x + y;   // 변수 result를 선언 후 'x + y'를 저장
+   
+    // int x; int y; int z; = int x, y, z; 동일
+    
+    // ex) int x; int result = x + 10; : wrong
+    // 변수 선언 후 초기화가 진행되어야 함
+    // 변수의 값이 설정되기 전에 다음 변수 실행할 시 컴파일 X
+    // ex) int x = 0; int result = x + 10; : right
+    // 변수 x 선언 후 '0'을 저장
+    // 변수 x 값을 읽고 10을 더하여 변수 result에 저장
+   
+   
+		System.out.println(result);  
+		
+		
+	} // main end
+	
+} // class end
+
+// 10 출력
