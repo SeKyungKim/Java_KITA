@@ -1,14 +1,21 @@
 package day01.basic;
 
-public class practice {
+public class practice {   	// class 선언
+// practice는 파일명과 일치
 
-	public static void main(String[] args) { 
-  // 단축기 : main입력 + ctrl + space-bar
+	public static void main(String[] args) {   	//메소드 선언
+  	// 단축기 : main입력 + ctrl + space-bar
+  	// 
 				
 		System.out.println("Hello Java!!");  
+		// println : 한 줄 띄우고 출력
+		
 		System.out.print("\n Hello");
+		// print : 띄우지 않고 붙여서 출력
+		
 		System.out.println();
 		System.out.println("Hello~! Java!!");
+		
 		
 	} // main end
 	
