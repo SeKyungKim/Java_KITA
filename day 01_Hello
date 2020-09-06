@@ -1,29 +1,19 @@
-package day01.basic;
+package day01_basic; //package 이름
 
-public class practice {   	// class 선언
-// practice는 파일명과 일치
-
-	public static void main(String[] args) {   	//메소드 선언
-  	// 단축기 : main입력 + ctrl + space-bar
-  	// 
-				
-		System.out.println("Hello Java!!");  
-		// println : 한 줄 띄우고 출력
-		
-		System.out.print("\n Hello");
-		// print : 띄우지 않고 붙여서 출력
-		
-		System.out.println();
-		System.out.println("Hello~! Java!!");
+public class Hello {	// class 이름
+	public static void main(String[] args) {
+	// 메소드 선언
+	// main 입력 + ctrl + space bar : 자동완성
 		
 		
-	} // main end
+		System.out.println("\n Hello");
+		// sysout 입력 + ctrl + space bar
+		// \n은 한 칸 띄어쓰기
+		System.out.print("Hello");
+		// System.out.print은 붙여쓰기
+		System.out.println("Hello");
+		// System.out.println은 한 줄 띄어쓰기
+		
 	
+	} // main end
 } // class end
-
-
-
-// Hello Java!!
-//
-// HelloHello
-// Hello222222 Java!! 출력
