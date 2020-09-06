@@ -1,6 +1,6 @@
-package day01.basic;
+package day01_basic;
 
-public class practice {   
+public class variable {   
 
 	public static void main(String[] args) { 
 				 
@@ -10,9 +10,8 @@ public class practice {
     int result = x + y;   // 변수 result를 선언 후 'x + y'를 저장
    
    
-  
-    // int x; int y; int z; = int x, y, z; 동일
     // int : 정수,  double : 실수
+    // int x; int y; int z; = int x, y, z; 동일
     
     // ex) int x; int result = x + 10; : wrong
     // 변수 선언 후 초기화가 진행되어야 함
@@ -25,9 +24,6 @@ public class practice {
    
    
    
-   
-   
-   
 		System.out.println(result);  
 		
 		
@@ -35,4 +31,3 @@ public class practice {
 	
 } // class end
 
-// 10 출력
