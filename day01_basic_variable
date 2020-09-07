@@ -8,9 +8,11 @@ public class variable {
     x = 1;    // 변수 x에 '1'을 저장
     int y = 2;    // 변수 y를 선언 후 '2'를 저장
     int result = x + y;   // 변수 result를 선언 후 'x + y'를 저장
+    double z = 1.1;
+    String a = "Test";
+    
    
-   
-    // int : 정수,  double : 실수
+    // int : 정수,  double : 실수,  String : 문자열
     // int x; int y; int z; = int x, y, z; 동일
     
     // ex) int x; int result = x + 10; : wrong
@@ -22,9 +24,10 @@ public class variable {
     // 변수 x 값을 읽고 10을 더하여 변수 result에 저장
    
    
-   
-   
-		System.out.println(result);  
+   	System.out.println(result);  
+		System.out.println(z);
+		System.out.println(a);
+		
 		
 		
 	} // main end
